@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1><center><bgcolor="RED">MY BLOG</center></h1>
+</head>
+<body>
+<p>
+    {{blog.body}}
+</p>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+    <img src="{{ blog.media.url }}"/> 
+    <br>
+    <br>
+    <br>
+
+<a class="center-align" href="/admin">Admin Login</a>
+
+</div>
+</body>
+<footer><center>copyright issue krdega meh</center></footer>
+</html>
